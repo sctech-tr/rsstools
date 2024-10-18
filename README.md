@@ -10,7 +10,6 @@ A powerful Python tool for creating, editing, and managing RSS feeds with both p
 - Validate feed structure and required elements
 - Command-line interface for easy management
 - Support for optional elements like author and publication date
-- JSON export capability for feed items
 
 ## Installation
 
@@ -29,13 +28,22 @@ click>=8.0.0
 pip install rsstools
 ```
 
-### Installing via pyz
+### Using via pyz
 
 1. Download the latest pyz from the releases tab.
-2. Run:
-
+2. Make the file executable:
 ```bash
-pip install rsstools.pyz
+chmod +x rsstools.pyz
+```
+3. You can run it directly:
+```bash
+python rsstools.pyz
+```
+
+If you need to extract the contents:
+```bash
+unzip rsstools.pyz -d rsstools_extracted
+cd rsstools_extracted
 ```
 
 ### Installing from source
